@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>장대 건설 | 설비 전문 회사</title>
+  <meta name="description" content="장대 건설 - 건축 설비, 기계 설비, 유지보수 전문 회사 소개 홈페이지">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --brand: #38bdf8;
+      --accent: #22c55e;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; height: 100%; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, "Apple SD Gothic Neo", "맑은 고딕", sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(6px); background: rgba(17,24,39,0.6); border-bottom: 1px solid rgba(255,255,255,0.06); z-index: 10; }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; }
+    .brand-badge { width: 28px; height: 28px; border-radius: 6px; background: linear-gradient(135deg, var(--brand), var(--accent)); display: grid; place-items: center; color: #0b1220; font-weight: 800; }
+    nav ul { display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; }
+    nav a { color: var(--muted); font-weight: 500; }
+    nav a:hover { color: var(--text); }
+
+    .hero { padding: 72px 0 48px; text-align: center; }
+    .hero h1 { font-size: clamp(28px, 5vw, 44px); margin: 0 0 12px; }
+    .hero p { color: var(--muted); margin: 0 0 22px; }
+    .cta { display: inline-flex; align-items: center; gap: 10px; padding: 12px 18px; background: #0ea5e9; color: #03101a; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; }
+    .cta:hover { background: #38bdf8; }
+
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+    .card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 18px; }
+    .services .card { grid-column: span 4; }
+    .card.about { grid-column: span 7; }
+    .card.stats { grid-column: span 5; }
+    @media (max-width: 900px) {
+      .services .card, .card.about, .card.stats { grid-column: span 12; }
+    }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .muted { color: var(--muted); }
+
+    footer { margin-top: 48px; padding: 32px 0; border-top: 1px solid rgba(255,255,255,0.06); color: var(--muted); }
+  </style>
+  <script src="./script.js" defer></script>
+  <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-badge">장</div>
+        <span>장대 건설</span>
+      </div>
+      <nav aria-label="주요 섹션">
+        <ul>
+          <li><a href="#services">서비스</a></li>
+          <li><a href="#about">회사소개</a></li>
+          <li><a href="#contact">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container" tabindex="-1"></main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> 장대 건설. All rights reserved.</div>
+  </footer>
+</body>
+</html>
+
+d
